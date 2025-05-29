@@ -1,0 +1,151 @@
+:root {
+  --color-deep-blue: #1c3d5a;
+  --color-deep-blue-opacity: rgba(28, 61, 90, 0.6);
+  --color-gold: #d4af37;
+  --color-maroon: #7b2d26;
+  --color-olive-green: #6a7f4e;
+  --color-light-gray: #f5f5f5;
+  --color-light-gray-opacity: rgba(245, 245, 245, 0.6);
+  --color-soft-beige: #f5e4b7;
+  --color-dark-gray: #333333;
+  --color-light-gold: #fff9e5;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-light-gold);
+  color: black;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-soft-beige);
+  border: 1px solid var(--color-dark-gray);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 8px;
+}
+
+header nav ul li {
+  margin: 0 7px;
+  padding: 7px;
+}
+
+header nav ul li a {
+  color: var(--color-dark-gray);
+  font-size: 1.15rem;
+}
+
+.pickedNav {
+  background-color: var(--color-light-gray);
+}
+
+#burger-menu {
+  display: none;
+}
+
+#burger-menu-pointer {
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: var(--color-dark-gray);
+  margin: 4px 0;
+  transition: 0.2s;
+}
+
+.bar1 {
+  margin-top: 0;
+}
+
+.bar3 {
+  margin-bottom: 0;
+}
+
+.mobile-menu .bar1 {
+  transform: translate(0, 7px) rotate(-45deg);
+}
+
+.mobile-menu .bar2 {
+  opacity: 0;
+}
+
+.mobile-menu .bar3 {
+  transform: translate(0, -7px) rotate(45deg);
+}
+
+.mobile-menu-ul {
+  display: block;
+}
+
+.mobile-menu-li {
+  display: list-item;
+}
+
+@media only screen and (max-width: 768px) {
+  .noPickedNav {
+    display: none;
+  }
+  #burger-menu {
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: 0.8rem;
+    right: 0;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin: 32px 0;
+  padding-top: 16px;
+}
+
+.container {
+  margin: 0 32px;
+  padding: 0 32px 16px 32px;
+}
+
+.questionAndAnswer p {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 16px;
+    padding: 0 16px;
+  }
+  h1 {
+    margin: 16px 0;
+  }
+}
+
+/* Main page */
+
+.main-container {
+  background-color: var(--color-light-gray-opacity);
+}
+
+/* Judaism page styles */
+
+.judaism-container {
+  background-color: var(--color-deep-blue-opacity);
+}
