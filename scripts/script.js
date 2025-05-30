@@ -15,12 +15,12 @@ BURGER_MENU.addEventListener("click", () => {
   });
 });
 
-let isMobileSize = window.innerWidth < 768 ? true : false; //boolean
+let isMobileSize = window.innerWidth < 992 ? true : false; //boolean
 
-//Set the default value of the class when the z-window exceeds the 768px point (mobile - desktop)
+//Set the default value of the class when the z-window exceeds the 992px point (mobile - desktop)
 
 window.onresize = () => {
-  if (isMobileSize !== (window.innerWidth < 768 ? true : false)) {
+  if (isMobileSize !== (window.innerWidth < 992 ? true : false)) {
     isMobileSize = !isMobileSize;
     NAVBAR_UL.classList = new Array();
     BURGER_MENU.classList = new Array();
