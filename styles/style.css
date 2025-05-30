@@ -160,6 +160,7 @@ h1 {
 
 .article-container .article-photo {
   min-width: 300px;
+  min-height: 300px;
   margin: 16px 0;
   padding: 0;
 }
@@ -171,7 +172,11 @@ h1 {
 }
 
 .article-left p {
-  padding-right: 32px;
+  padding-right: 64px;
+}
+
+span.designe-bold {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
