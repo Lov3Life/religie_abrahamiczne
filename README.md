@@ -1,2 +1,6 @@
-# religie_abrahamiczne
- Strona poświęcona religiom abrahamicznym
+# Content of project
+* [General info])(#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [More detailed information about modules](#more-detailed-information-about-modules)
+* [Application view](#application-view)
