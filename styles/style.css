@@ -144,6 +144,45 @@ h1 {
   background-color: var(--color-light-gray-opacity);
 }
 
+/* Subpaged article style */
+
+.article-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.article-container .article-text {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.article-container .article-photo {
+  min-width: 300px;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.article-photo img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid var(--color-gold);
+}
+
+.article-left p {
+  padding-right: 32px;
+}
+
+@media only screen and (max-width: 992px) {
+  .article-container .article-photo {
+    display: none;
+  }
+  .article-left p {
+    padding-right: 0;
+  }
+}
+
 /* Judaism page styles */
 
 .judaism-container {
