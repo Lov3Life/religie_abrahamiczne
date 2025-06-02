@@ -1,6 +1,7 @@
-const NAVBAR_UL = document.getElementById("navbarUl");
+const NAVBAR_UL = document.getElementById("navbar-ul");
 const BURGER_MENU = document.getElementById("burger-menu-pointer");
-const HEADER_NAV_LI = document.querySelectorAll(".headerNav");
+const HEADER_NAV_LI = document.querySelectorAll(".header-nav");
+const GALLERY_HEDLINE = document.getElementById("gallery-headline");
 
 //drop-down navbar (mobile)
 
@@ -9,8 +10,8 @@ BURGER_MENU.addEventListener("click", () => {
   NAVBAR_UL.classList.toggle("mobile-menu-ul");
   HEADER_NAV_LI.forEach((element) => {
     element.classList.toggle("mobile-menu-li");
-    if (!element.classList.contains("pickedNav")) {
-      element.classList.toggle("noPickedNav");
+    if (!element.classList.contains("picked-nav")) {
+      element.classList.toggle("no-picked-nav");
     }
   });
 });
@@ -21,15 +22,25 @@ let isMobileSize = window.innerWidth < 992 ? true : false; //boolean
 
 window.onresize = () => {
   if (isMobileSize !== (window.innerWidth < 992 ? true : false)) {
-    isMobileSize = !isMobileSize;
     NAVBAR_UL.classList = new Array();
     BURGER_MENU.classList = new Array();
     HEADER_NAV_LI.forEach((element) => {
-      if (element.classList.contains("pickedNav")) {
-        element.classList = ["headerNav pickedNav"];
+      if (element.classList.contains("picked-nav")) {
+        element.classList = ["header-nav picked-nav"];
       } else {
-        element.classList = ["headerNav noPickedNav"];
+        element.classList = ["header-nav no-picked-nav"];
       }
     });
+
+    //Smaller hedline for mobile devices on the gallery page
+
+    if (GALLERY_HEDLINE !== null) {
+      if (isMobileSize) {
+        GALLERY_HEDLINE.innerText = "Galeria zdjęć miejsc ważnch wśród wyznawców religii Abrahamowych";
+      } else {
+        GALLERY_HEDLINE.innerText = "Galeria zdjęć";
+      }
+    }
+    isMobileSize = !isMobileSize;
   }
 };

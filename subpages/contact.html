@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../scripts/script.js" defer></script>
+    <title>Religie abrahamowe - kontakt</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="navbar-ul">
+          <li class="header-nav no-picked-nav"><a href="../index.html">Strona główna</a></li>
+          <li class="header-nav no-picked-nav"><a href="./judaism.html">Judaizm</a></li>
+          <li class="header-nav no-picked-nav"><a href="./islam.html">Islam</a></li>
+          <li class="header-nav no-picked-nav"><a href="./christianity.html">Chrześcijaństwo</a></li>
+          <li class="header-nav no-picked-nav"><a href="./other.html">Inne religie</a></li>
+          <li class="header-nav no-picked-nav"><a href="./gallery.html">Galeria zdjęć</a></li>
+          <li class="header-nav picked-nav"><a href="./contact.html">Kontakt</a></li>
+          <li id="burger-menu">
+            <div id="burger-menu-pointer">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container contact-container">
+      <h1>Formularz kontaktowy</h1>
+      <p>Jeżeli posiadasz zdjęcia ze swoich wyjazdów związane z tematyką strony i chcesz się nimi podzielić wypełnij poniższy formularz i załącz zdjęcia, a my skontaktujemy się z Tobą.</p>
+      <div class="form-container">
+        <form action="./contact.html" method="get">
+          <div class="single-form-block">
+            <label for="first-name">Imie:</label>
+            <input name="first-name" id="first-name" type="text" />
+          </div>
+          <div class="single-form-block">
+            <label for="surname">Nazwisko:</label>
+            <input name="surname" id="surname" type="text" />
+          </div>
+          <div class="single-form-block">
+            <label for="email">E-mail:</label>
+            <input name="email" id="email" type="email" />
+          </div>
+          <div class="single-form-block">
+            <label for="description">Opisz swój wyjazd:</label>
+            <textarea name="description" id="description" cols="50" rows="10"></textarea>
+          </div>
+          <div class="single-form-block">
+            <label for="photos">Wybierz zdjęcia do przesłania:</label>
+            <input type="file" id="photos" name="photos" multiple accept=".png, .jpg, .jpeg, .gif, .heic, .heif" />
+          </div>
+          <button type="submit">Prześlij</button>
+          <button type="reset">Resetuj</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
