@@ -14,6 +14,7 @@
   --color-dark-gray: #333333;
   --color-dark-gray-opacity: rgba(51, 51, 51, 0.6);
   --color-light-gold: #fff9e5;
+  --muted-purple-opacity: rgba(90, 76, 110, 0.6);
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
 }
@@ -28,6 +29,7 @@ body {
   background-color: var(--color-light-gold);
   color: black;
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 header {
@@ -42,12 +44,12 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 header nav ul li {
-  margin: 0 7px;
-  padding: 7px;
+  margin: 0 0.4rem;
+  padding: 0.4rem;
 }
 
 header nav ul li a {
@@ -119,23 +121,23 @@ header nav ul li a {
 
 h1 {
   text-align: center;
-  margin: 0 0 32px 0;
-  padding-top: 16px;
+  margin: 0 0 2rem 0;
+  padding-top: 1rem;
   font-size: 2rem;
 }
 
 .container {
-  margin: 32px;
-  padding: 0 32px 16px 32px;
+  margin: 2rem;
+  padding: 0 2rem 1rem 2rem;
 }
 
 @media only screen and (max-width: 768px) {
   .container {
-    margin: 8px;
-    padding: 0 8px 8px 8px;
+    margin: 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
   }
   h1 {
-    margin: 8px 0;
+    margin: 0.5rem 0;
   }
 }
 
@@ -173,7 +175,7 @@ h1 {
 .article-container .article-photo {
   min-width: 300px;
   min-height: 300px;
-  margin: 16px 0;
+  margin: 1rem 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -187,8 +189,8 @@ h1 {
 }
 
 .article-left {
-  padding-right: 64px;
-  padding-left: 24px;
+  padding-right: 4rem;
+  padding-left: 1.5rem;
 }
 
 span.designe-bold {
@@ -207,7 +209,7 @@ span.designe-bold {
   }
   .article-left {
     padding-right: 0;
-    padding-left: 8px;
+    padding-left: 0.5rem;
   }
 }
 
@@ -235,7 +237,7 @@ span.designe-bold {
 /* Other subpage */
 
 .other-container {
-  background-color: var(--color-dark-gray-opacity);
+  background-color: var(--muted-purple-opacity);
   border: 3px solid var(--color-maroon);
 }
 
@@ -247,16 +249,16 @@ span.designe-bold {
 }
 
 form {
-  padding-left: 8px;
+  padding-left: 0.5rem;
 }
 
 label {
-  margin-right: 16px;
+  margin-right: 1rem;
   vertical-align: top;
 }
 
 .single-form-block {
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -287,4 +289,5 @@ label {
 
 .gallery img {
   width: 100%;
+  border: 3px solid var(--color-dark-gray);
 }

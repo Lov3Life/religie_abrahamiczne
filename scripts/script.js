@@ -36,7 +36,7 @@ window.onresize = () => {
 
     if (GALLERY_HEDLINE !== null) {
       if (isMobileSize) {
-        GALLERY_HEDLINE.innerText = "Galeria zdjęć miejsc ważnch wśród wyznawców religii Abrahamowych";
+        GALLERY_HEDLINE.innerText = "Galeria zdjęć z waszych podroży";
       } else {
         GALLERY_HEDLINE.innerText = "Galeria zdjęć";
       }
