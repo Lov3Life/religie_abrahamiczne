@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/style.css" />
     <script src="../scripts/script.js" defer></script>
     <title>Religie abrahamowe - inne religie</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navigation-between-pages">
         <ul id="navbar-ul">
           <li class="header-nav no-picked-nav"><a href="../index.html">Strona główna</a></li>
           <li class="header-nav no-picked-nav"><a href="./judaism.html">Judaizm</a></li>
@@ -28,10 +29,27 @@
         </ul>
       </nav>
     </header>
-    <article class="container other-container">
+    <div id="site-navigation-container" class="site-navigation-other">
+      <p>Spis treści</p>
+      <nav id="site-navigation">
+        <ul id="other-nav">
+          <li data-index="1."><a href="#babizm">Babizm</a></li>
+          <li data-index="2."><a href="#azalityzm">Azalityzm</a></li>
+          <li data-index="3."><a href="#bahaizm">Bahaizm</a></li>
+          <li data-index="4."><a href="#karaimizm">Karaimizm</a></li>
+          <li data-index="5."><a href="#druzyzm">Druzyzm</a></li>
+          <li data-index="6."><a href="#mandeizm">Mandeizm</a></li>
+          <li data-index="7."><a href="#rastafari">Rastafari</a></li>
+          <li data-index="8."><a href="#samarytanizm">Samarytanizm</a></li>
+          <li data-index="9."><a href="#sikhizm">Sikhizm</a></li>
+          <li data-index="10."><a href="#voodoo">Voodoo</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main class="container other-container">
       <h1>Inne religie Abrahamowe</h1>
       <div class="religion">
-        <section class="single-article">
+        <section class="single-article" id="babizm">
           <h2>Babizm</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -76,7 +94,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="azalityzm">
           <h2>Azalityzm</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -117,7 +135,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="bahaizm">
           <h2>Bahaizm</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -179,7 +197,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="karaimizm">
           <h2>Karaimizm</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -228,7 +246,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="druzyzm">
           <h2>Druzyzm</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -282,7 +300,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="mandeizm">
           <h2>Mandeizm</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -335,7 +353,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="rastafari">
           <h2>ruch Rastafari</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -390,7 +408,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="samarytanizm">
           <h2>Samarytanizm</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -449,7 +467,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="sikhizm">
           <h2>Sikhizm</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -508,7 +526,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="voodoo">
           <h2>Voodoo</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -572,6 +590,12 @@
           </div>
         </section>
       </div>
-    </article>
+    </main>
+    <footer>
+      <p class="footer-description">Strona edukacyjna poświęcona religiom abrahamowym. Powstała w&nbsp;celach informacyjnych i&nbsp;popularyzatorskich.</p>
+      <a href="https://www.flaticon.com/free-icons/religion" title="religion icons">Religion favicon created by Freepik - Flaticon</a>
+      <p class="footer-copy">© 2025 Religie Abrahamowe</p>
+    </footer>
+    <button id="scroll-to-top-button" class="other-scroll-button" title="Wróć na górę">↑</button>
   </body>
 </html>

@@ -1,7 +1,8 @@
 const NAVBAR_UL = document.getElementById("navbar-ul");
 const BURGER_MENU = document.getElementById("burger-menu-pointer");
 const HEADER_NAV_LI = document.querySelectorAll(".header-nav");
-const GALLERY_HEDLINE = document.getElementById("gallery-headline");
+const TEXTAREA = document.getElementById("description");
+const SCROLL_BUTTON = document.getElementById("scroll-to-top-button");
 
 //drop-down navbar (mobile)
 
@@ -16,12 +17,28 @@ BURGER_MENU.addEventListener("click", () => {
   });
 });
 
-let isMobileSize = window.innerWidth < 992 ? true : false; //boolean
+//Scroll to top button logic (mobile - desktop)
 
-//Set the default value of the class when the z-window exceeds the 992px point (mobile - desktop)
+window.addEventListener("scroll", () => {
+  if (SCROLL_BUTTON !== null) {
+    SCROLL_BUTTON.style.display = window.scrollY > 300 ? "block" : "none";
+  }
+});
 
-window.onresize = () => {
-  if (isMobileSize !== (window.innerWidth < 992 ? true : false)) {
+if (SCROLL_BUTTON !== null) {
+  SCROLL_BUTTON.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
+
+let isMobileSize = window.innerWidth < 992 ? true : false;
+
+function resizeOnPages(isOnload) {
+  //Set the default value of the class when the z-window exceeds the 992px point (mobile - desktop)
+  if (!isOnload) {
     NAVBAR_UL.classList = new Array();
     BURGER_MENU.classList = new Array();
     HEADER_NAV_LI.forEach((element) => {
@@ -31,16 +48,24 @@ window.onresize = () => {
         element.classList = ["header-nav no-picked-nav"];
       }
     });
+  }
 
-    //Smaller hedline for mobile devices on the gallery page
+  //Smallet textarea for mobile devices on the contant page
 
-    if (GALLERY_HEDLINE !== null) {
-      if (isMobileSize) {
-        GALLERY_HEDLINE.innerText = "Galeria zdjęć z waszych podroży";
-      } else {
-        GALLERY_HEDLINE.innerText = "Galeria zdjęć";
-      }
+  if (TEXTAREA !== null) {
+    if (!isMobileSize) {
+      TEXTAREA.attributes.cols.value = "50";
+    } else {
+      TEXTAREA.attributes.cols.value = "35";
     }
+  }
+}
+
+window.onresize = () => {
+  if (isMobileSize !== (window.innerWidth < 992 ? true : false)) {
     isMobileSize = !isMobileSize;
+    resizeOnPages(false);
   }
 };
+
+resizeOnPages(true);

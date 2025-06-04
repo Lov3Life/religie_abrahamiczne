@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/style.css" />
     <script src="../scripts/script.js" defer></script>
     <title>Religie abrahamowe - Chrześcijaństwo</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navigation-between-pages">
         <ul id="navbar-ul">
           <li class="header-nav no-picked-nav"><a href="../index.html">Strona główna</a></li>
           <li class="header-nav no-picked-nav"><a href="./judaism.html">Judaizm</a></li>
@@ -28,10 +29,29 @@
         </ul>
       </nav>
     </header>
-    <article class="container christianity-container">
+    <div id="site-navigation-container" class="site-navigation-christianity">
+      <p>Spis treści</p>
+      <nav id="site-navigation">
+        <ul id="main-nav">
+          <li data-index="1."><a href="#history">Historia</a></li>
+          <li data-index="2."><a href="#beliefs">Wierzenia</a></li>
+          <li data-index="3."><a href="#books">Święte księgi</a></li>
+          <li data-index="4."><a href="#rituals">Rytuały</a></li>
+          <li data-index="5."><a href="#holidays">Święta</a></li>
+          <li data-index="6."><a href="#characters">Postacie</a></li>
+          <li data-index="7."><a href="#law">Prawo</a></li>
+          <li data-index="8."><a href="#places">Miejsca</a></li>
+          <li data-index="9."><a href="#factions">Nurty</a></li>
+          <li data-index="10."><a href="#impact">Wpływ</a></li>
+          <li data-index="11."><a href="#contemporaneity">Współczesność</a></li>
+          <li data-index="12."><a href="#curiosities">Ciekawostki</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main class="container christianity-container">
       <h1>Chrześcijaństwo</h1>
       <div class="religion">
-        <section class="single-article">
+        <section class="single-article" id="history">
           <h2>Historia</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -75,7 +95,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="beliefs">
           <h2>Wierzenia i&nbsp;doktryna</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -122,7 +142,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="books">
           <h2>Święte księgi</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -173,7 +193,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="rituals">
           <h2>Rytuały i&nbsp;praktyki religijne</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -226,7 +246,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="holidays">
           <h2>Święta i&nbsp;kalendarz religijny</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -282,7 +302,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="characters">
           <h2>Postacie kluczowe / Prorocy</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -348,7 +368,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="law">
           <h2>Prawo religijne i&nbsp;etyka</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -395,7 +415,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="places">
           <h2>Miejsca święte i&nbsp;symbole</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -449,7 +469,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="factions">
           <h2>Nurty i&nbsp;odłamy</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -524,7 +544,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="impact">
           <h2>Wpływ kulturowy i&nbsp;historyczny</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -577,7 +597,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="contemporaneity">
           <h2>Współczesność</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -626,7 +646,7 @@
             </div>
           </div>
         </section>
-        <section class="single-article">
+        <section class="single-article" id="curiosities">
           <h2>Ciekawostki</h2>
           <div class="article-container">
             <div class="article-text article-left">
@@ -675,6 +695,12 @@
           </div>
         </section>
       </div>
-    </article>
+    </main>
+    <footer>
+      <p class="footer-description">Strona edukacyjna poświęcona religiom abrahamowym. Powstała w&nbsp;celach informacyjnych i&nbsp;popularyzatorskich.</p>
+      <a href="https://www.flaticon.com/free-icons/religion" title="religion icons">Religion favicon created by Freepik - Flaticon</a>
+      <p class="footer-copy">© 2025 Religie Abrahamowe</p>
+    </footer>
+    <button id="scroll-to-top-button" class="christianity-scroll-button" title="Wróć na górę">↑</button>
   </body>
 </html>
