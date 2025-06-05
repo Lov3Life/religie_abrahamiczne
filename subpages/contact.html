@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formularz kontaktowy do serwisu o religiach abrahamowych" />
+    <meta name="keywords" content="religie abrahamowe, kontakt, zdjęcia" />
+    <meta name="author" content="Bartosz Trusiuk, numer albumu: 47673" />
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/style.css" />
     <script src="../scripts/script.js" defer></script>
-    <title>Religie abrahamowe - kontakt</title>
+    <title>Formularz kontaktowy</title>
   </head>
   <body>
     <header>
@@ -39,15 +42,15 @@
         <form action="./contact.html" method="get">
           <div class="single-form-block">
             <label for="first-name">Imie:</label>
-            <input name="first-name" id="first-name" type="text" />
+            <input name="first-name" id="first-name" type="text" autocomplete="given-name" />
           </div>
           <div class="single-form-block">
             <label for="surname">Nazwisko:</label>
-            <input name="surname" id="surname" type="text" />
+            <input name="surname" id="surname" type="text" autocomplete="family-name" />
           </div>
           <div class="single-form-block">
             <label for="email">E-mail:</label>
-            <input name="email" id="email" type="email" />
+            <input name="email" id="email" type="email" autocomplete="email" />
           </div>
           <div class="single-form-block">
             <label for="description">Opisz swój wyjazd:</label>
@@ -57,15 +60,15 @@
             <label for="photos">Wybierz zdjęcia do przesłania:</label>
             <input type="file" id="photos" name="photos" multiple accept=".png, .jpg, .jpeg, .gif, .heic, .heif" />
           </div>
-          <button type="submit">Prześlij</button>
-          <button type="reset">Resetuj</button>
+          <button type="submit" id="submit" name="submit">Prześlij</button>
+          <button type="reset" id="reset" name="reset">Resetuj</button>
         </form>
       </div>
     </main>
   </body>
   <footer>
     <p class="footer-description">Strona edukacyjna poświęcona religiom abrahamowym. Powstała w&nbsp;celach informacyjnych i&nbsp;popularyzatorskich.</p>
-    <a href="https://www.flaticon.com/free-icons/religion" title="religion icons">Religion favicon created by Freepik - Flaticon</a>
+    <p><a target="_blank" href="https://www.flaticon.com/free-icons/religion" title="religion icons">Religion favicon created by Freepik - Flaticon</a></p>
     <p class="footer-copy">© 2025 Religie Abrahamowe</p>
   </footer>
 </html>
