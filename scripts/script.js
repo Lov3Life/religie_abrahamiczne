@@ -19,10 +19,14 @@ BURGER_MENU.addEventListener("click", () => {
 
 //Scroll to top button logic (mobile - desktop)
 
-window.addEventListener("scroll", () => {
+function scrollButtonVisibility() {
   if (SCROLL_BUTTON !== null) {
     SCROLL_BUTTON.style.display = window.scrollY > 300 ? "block" : "none";
   }
+}
+
+window.addEventListener("scroll", () => {
+  scrollButtonVisibility();
 });
 
 if (SCROLL_BUTTON !== null) {
@@ -68,4 +72,7 @@ window.onresize = () => {
   }
 };
 
-resizeOnPages(true);
+(function () {
+  resizeOnPages(true);
+  scrollButtonVisibility();
+})();

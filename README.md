@@ -4,6 +4,7 @@ This project is an educational website that presents comprehensive information a
 
 ## 📁 Project Structure
 
+```
 project-root/
 │
 ├── index.html # Home page with quotes and FAQ-style introduction
@@ -26,6 +27,7 @@ project-root/
 │
 └── images/
 └── [...].webp/.jpg/.png/.gif # Icons, graphics, gallery images
+```
 
 ## 🎨 Technologies Used
 
