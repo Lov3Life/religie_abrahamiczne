@@ -253,7 +253,9 @@ footer p a {
 
 .quote-box {
   max-width: 600px;
-  margin: 2rem 8rem 4rem 8rem;
+  margin: 1rem 0rem 3rem 7rem;
+  padding: 1rem;
+  background-color: var(--color-light-gray);
 }
 
 .quote {
@@ -274,12 +276,18 @@ footer p a {
   border-left: 5px solid var(--color-dark-gray);
 }
 
+@media only screen and (max-width: 992px) {
+  .quote-box {
+    margin: 1rem 0rem 3rem 5rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .question-and-answer p {
     text-align: left;
   }
   .quote-box {
-    margin: 2rem 1rem 4rem 1rem;
+    margin: 1rem 0rem 1rem 1rem;
   }
 }
 
@@ -368,11 +376,13 @@ span.designe-bold {
 #site-navigation ul li::before {
   content: attr(data-index);
   color: var(--color-dark-gray);
+  font-size: 1.05rem;
 }
 
 #site-navigation ul li a {
   color: var(--color-dark-gray);
-  padding: 0.25rem;
+  padding: 0.15rem;
+  font-size: 1.05rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -586,8 +596,10 @@ div.single-form-block.form-button-block {
 
 @media only screen and (max-width: 768px) {
   label,
-  input {
+  input,
+  textarea {
     display: block;
+    margin-bottom: 0.2rem;
   }
 }
 
