@@ -58,6 +58,16 @@ header nav#navigation-between-pages ul {
 header nav#navigation-between-pages ul li {
   margin: 0 0.4rem;
   padding: 0.4rem;
+  border-radius: 1rem;
+  width: max-content;
+}
+
+header nav#navigation-between-pages ul li.header-nav {
+  transition: background-color 0.3s ease;
+}
+
+header nav#navigation-between-pages ul li.header-nav:hover {
+  background-color: var(--color-light-gold);
 }
 
 header nav#navigation-between-pages ul li a {
@@ -84,7 +94,7 @@ header nav#navigation-between-pages ul li a {
   height: 3px;
   background-color: var(--color-dark-gray);
   margin: 4px 0;
-  transition: 0.2s;
+  transition: 0.2s linear;
 }
 
 .bar1 {
@@ -155,11 +165,13 @@ img {
   margin: 2rem;
   padding: 0 2rem 1rem 2rem;
   flex: 1;
+  border-radius: 2rem;
 }
 
 .container ul,
 .container ol {
   padding-left: 2.5rem;
+  margin: 1rem 0;
 }
 
 .single-article {
@@ -284,6 +296,10 @@ footer p a {
   text-align: justify;
 }
 
+.container .religion .single-article:last-child .article-text {
+  border-bottom: none;
+}
+
 .article-container .article-photo {
   min-width: 300px;
   min-height: 300px;
@@ -296,6 +312,7 @@ footer p a {
 .article-photo img {
   width: 300px;
   height: 300px;
+  border-radius: 1rem;
 }
 
 .article-left {
@@ -338,8 +355,14 @@ span.designe-bold {
 }
 
 #site-navigation ul li {
-  margin: 0.4rem;
+  padding: 0.4rem;
   text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 1rem;
+}
+
+#site-navigation ul li:hover {
+  background-color: var(--color-light-gray);
 }
 
 #site-navigation ul li::before {
@@ -383,6 +406,14 @@ span.designe-bold {
   border: 3px solid var(--color-gold);
 }
 
+.judaism-container .religion .single-article .article-text {
+  border-bottom: 3px solid var(--color-deep-blue);
+}
+
+div.site-navigation-judaism nav#site-navigation ul li a {
+  transition: color 0.1s ease;
+}
+
 div.site-navigation-judaism nav#site-navigation ul li a:hover {
   color: var(--color-deep-blue);
 }
@@ -406,6 +437,14 @@ div.site-navigation-judaism nav#site-navigation ul li a:hover {
   border: 3px solid var(--color-gold);
 }
 
+.islam-container .religion .single-article .article-text {
+  border-bottom: 3px solid var(--color-olive-green);
+}
+
+div.site-navigation-islam nav#site-navigation ul li a {
+  transition: color 0.1s ease;
+}
+
 div.site-navigation-islam nav#site-navigation ul li a:hover {
   color: var(--color-olive-green);
 }
@@ -427,6 +466,14 @@ div.site-navigation-islam nav#site-navigation ul li a:hover {
 .christianity-container {
   background-color: var(--color-maroon-opacity);
   border: 3px solid var(--color-soft-beige);
+}
+
+.christianity-container .religion .single-article .article-text {
+  border-bottom: 3px solid var(--color-maroon);
+}
+
+div.site-navigation-christianity nav#site-navigation ul li a {
+  transition: color 0.1s ease;
 }
 
 div.site-navigation-christianity nav#site-navigation ul li a:hover {
@@ -507,15 +554,16 @@ label {
 
 input,
 textarea,
-button {
+form button {
   margin-left: 0.5rem;
   padding: 0.2rem;
+  border-radius: 3px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea,
-button,
+form button,
 input[type="file"]::file-selector-button {
   outline: none;
   border: 1px solid var(--color-gold);
@@ -525,7 +573,6 @@ input[type="file"]::file-selector-button {
 
 input {
   width: auto;
-  border-radius: 3px;
 }
 
 .single-form-block {
