@@ -296,7 +296,6 @@ footer p a {
 .article-photo img {
   width: 300px;
   height: 300px;
-  border: 3px solid var(--color-gold);
 }
 
 .article-left {
@@ -388,6 +387,10 @@ div.site-navigation-judaism nav#site-navigation ul li a:hover {
   color: var(--color-deep-blue);
 }
 
+.judaism-image {
+  border: 3px solid var(--color-gold);
+}
+
 .judaism-scroll-button {
   background-color: var(--color-deep-blue-opacity);
 }
@@ -407,6 +410,10 @@ div.site-navigation-islam nav#site-navigation ul li a:hover {
   color: var(--color-olive-green);
 }
 
+.islam-image {
+  border: 3px solid var(--color-gold);
+}
+
 .islam-scroll-button {
   background-color: var(--color-olive-green-opacity);
 }
@@ -419,11 +426,15 @@ div.site-navigation-islam nav#site-navigation ul li a:hover {
 
 .christianity-container {
   background-color: var(--color-maroon-opacity);
-  border: 3px solid var(--color-dark-gray);
+  border: 3px solid var(--color-soft-beige);
 }
 
 div.site-navigation-christianity nav#site-navigation ul li a:hover {
   color: var(--color-maroon);
+}
+
+.christianity-image {
+  border: 3px solid var(--color-soft-beige);
 }
 
 .christianity-scroll-button {
@@ -443,6 +454,10 @@ div.site-navigation-christianity nav#site-navigation ul li a:hover {
 
 div.site-navigation-other nav#site-navigation ul li a:hover {
   color: var(--color-muted-purple);
+}
+
+.other-image {
+  border: 3px solid var(--color-maroon);
 }
 
 @media only screen and (max-width: 1200px) {
