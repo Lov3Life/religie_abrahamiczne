@@ -348,22 +348,26 @@ span.designe-bold {
   }
 }
 
+#site-navigation {
+  margin: 0, 1rem;
+}
+
 #site-navigation ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem 0;
+  margin: 0;
 }
 
-#site-navigation-container p {
+#site-navigation-container h2 {
   text-align: center;
-  font-weight: bolder;
-  font-size: 1.35rem;
 }
 
 #site-navigation ul li {
-  padding: 0.4rem;
+  padding: 0.15rem;
+  margin: 0.05rem;
   text-align: center;
   transition: background-color 0.3s ease;
   border-radius: 1rem;
@@ -375,20 +379,14 @@ span.designe-bold {
 
 #site-navigation ul li::before {
   content: attr(data-index);
-  color: var(--color-dark-gray);
-  font-size: 1.05rem;
+  color: black;
+  font-size: 1.1rem;
 }
 
 #site-navigation ul li a {
-  color: var(--color-dark-gray);
-  padding: 0.15rem;
-  font-size: 1.05rem;
-}
-
-@media only screen and (max-width: 1200px) {
-  #site-navigation ul#main-nav li {
-    flex: 1 15%;
-  }
+  color: black;
+  padding: 0.2rem;
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -418,6 +416,10 @@ span.designe-bold {
 
 .judaism-container .religion .single-article .article-text {
   border-bottom: 3px solid var(--color-deep-blue);
+}
+
+div.site-navigation-judaism nav#site-navigation ul li {
+  flex: 1 15%;
 }
 
 div.site-navigation-judaism nav#site-navigation ul li a {
@@ -451,6 +453,10 @@ div.site-navigation-judaism nav#site-navigation ul li a:hover {
   border-bottom: 3px solid var(--color-olive-green);
 }
 
+div.site-navigation-islam nav#site-navigation ul li {
+  flex: 1 15%;
+}
+
 div.site-navigation-islam nav#site-navigation ul li a {
   transition: color 0.1s ease;
 }
@@ -482,6 +488,10 @@ div.site-navigation-islam nav#site-navigation ul li a:hover {
   border-bottom: 3px solid var(--color-maroon);
 }
 
+div.site-navigation-christianity nav#site-navigation ul li {
+  flex: 1 15%;
+}
+
 div.site-navigation-christianity nav#site-navigation ul li a {
   transition: color 0.1s ease;
 }
@@ -509,18 +519,20 @@ div.site-navigation-christianity nav#site-navigation ul li a:hover {
   border: 3px solid var(--color-maroon);
 }
 
+.other-container .religion .single-article .article-text {
+  border-bottom: 3px solid var(--color-muted-purple);
+}
+
+div.site-navigation-other nav#site-navigation ul li {
+  flex: 1 17%;
+}
+
 div.site-navigation-other nav#site-navigation ul li a:hover {
   color: var(--color-muted-purple);
 }
 
 .other-image {
   border: 3px solid var(--color-maroon);
-}
-
-@media only screen and (max-width: 1200px) {
-  #site-navigation ul#other-nav li {
-    flex: 1 17%;
-  }
 }
 
 @media only screen and (max-width: 992px) {
