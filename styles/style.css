@@ -324,8 +324,7 @@ footer p a {
 }
 
 .article-left {
-  padding-right: 4rem;
-  padding-left: 1.5rem;
+  padding: 0 4rem 0 1.5rem;
 }
 
 span.designe-bold {
@@ -343,13 +342,19 @@ span.designe-bold {
     display: none;
   }
   .article-left {
-    padding-right: 0;
-    padding-left: 0.5rem;
+    padding: 0 0 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .article-left {
+    padding: 0 1.5rem;
   }
 }
 
 #site-navigation {
-  margin: 0 1rem;
+  background-color: var(--color-light-gold);
+  border-radius: 2rem;
 }
 
 #site-navigation ul {
@@ -374,36 +379,42 @@ span.designe-bold {
 }
 
 #site-navigation ul li:hover {
-  background-color: var(--color-light-gray);
+  background-color: var(--color-soft-beige);
 }
 
 #site-navigation ul li::before {
   content: attr(data-index);
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 #site-navigation ul li a {
   color: black;
-  padding: 0.2rem;
-  font-size: 1.1rem;
+  padding: 0.2rem 0 0.2rem 0.2rem;
+  font-size: 1.15rem;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   #site-navigation ul#main-nav li {
     flex: 1 21%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   #site-navigation ul#main-nav li {
     flex: 1 26%;
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   #site-navigation ul#main-nav li {
     flex: 1 34%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #site-navigation ul#main-nav li {
+    flex: 1 100%;
   }
 }
 
@@ -416,6 +427,10 @@ span.designe-bold {
 
 .judaism-container .religion .single-article .article-text {
   border-bottom: 3px solid var(--color-deep-blue);
+}
+
+div.site-navigation-judaism nav#site-navigation {
+  border: 3px solid var(--color-gold);
 }
 
 div.site-navigation-judaism nav#site-navigation ul li {
@@ -453,6 +468,10 @@ div.site-navigation-judaism nav#site-navigation ul li a:hover {
   border-bottom: 3px solid var(--color-olive-green);
 }
 
+div.site-navigation-islam nav#site-navigation {
+  border: 3px solid var(--color-gold);
+}
+
 div.site-navigation-islam nav#site-navigation ul li {
   flex: 1 15%;
 }
@@ -486,6 +505,10 @@ div.site-navigation-islam nav#site-navigation ul li a:hover {
 
 .christianity-container .religion .single-article .article-text {
   border-bottom: 3px solid var(--color-maroon);
+}
+
+div.site-navigation-christianity nav#site-navigation {
+  border: 3px solid var(--color-soft-beige);
 }
 
 div.site-navigation-christianity nav#site-navigation ul li {
@@ -523,6 +546,10 @@ div.site-navigation-christianity nav#site-navigation ul li a:hover {
   border-bottom: 3px solid var(--color-muted-purple);
 }
 
+div.site-navigation-other nav#site-navigation {
+  border: 3px solid var(--color-maroon);
+}
+
 div.site-navigation-other nav#site-navigation ul li {
   flex: 1 17%;
 }
@@ -538,6 +565,12 @@ div.site-navigation-other nav#site-navigation ul li a:hover {
 @media only screen and (max-width: 992px) {
   #site-navigation ul#other-nav li {
     flex: 1 34%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #site-navigation ul#other-nav li {
+    flex: 1 100%;
   }
 }
 

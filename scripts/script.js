@@ -3,6 +3,16 @@ const BURGER_MENU = document.getElementById("burger-menu-pointer");
 const HEADER_NAV_LI = document.querySelectorAll(".header-nav");
 const TEXTAREA = document.getElementById("description");
 const SCROLL_BUTTON = document.getElementById("scroll-to-top-button");
+const FORM = document.forms["contact-form"];
+
+//Form allert on submit (mobile - desktop)
+if (FORM !== undefined) {
+  FORM.onsubmit = () => {
+    if (FORM["first-name"].value == "" || FORM["surname"].value == "" || FORM["email"].value == "" || FORM["description"].value == "" || FORM["photos"].value == "") {
+      alert("Należy uzupełnić wszystkie pola");
+    } else alert("Dziękujemy za przesłanie formularza");
+  };
+}
 
 //drop-down navbar (mobile)
 
