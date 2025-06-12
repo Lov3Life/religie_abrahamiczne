@@ -648,10 +648,11 @@ div.site-navigation-other nav#site-navigation ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
 }
 
 .quote-container .quote-box {
-  margin: 1rem 0 1rem 6rem;
+  margin: 1rem 0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -665,6 +666,7 @@ div.site-navigation-other nav#site-navigation ul li a:hover {
     flex-direction: column;
   }
   .quote-container {
+    margin: 0;
     padding-left: 0;
   }
 }
