@@ -26,7 +26,7 @@ project-root/
 │ └── lightbox-plus-jquery.js # Script for lightbox2 by Lokesh Dhakar
 │
 └── images/
-└── [...].webp/.jpg/.png/.gif # Icons, graphics, gallery images
+  └── [...].webp/.jpg/.png/.gif # Icons, graphics, gallery images
 ```
 
 ## 🎨 Technologies Used
