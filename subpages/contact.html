@@ -38,33 +38,49 @@
         Jeżeli posiadasz zdjęcia ze swoich wyjazdów związane z&nbsp;tematyką strony i&nbsp;chcesz się nimi podzielić wypełnij poniższy formularz i&nbsp;załącz zdjęcia, a&nbsp;my skontaktujemy się
         z&nbsp;Tobą.
       </p>
-      <div class="form-container">
-        <form id="contact-form" action="./contact.html" method="get">
-          <div class="single-form-block">
-            <label for="first-name">Imie:</label>
-            <input name="first-name" id="first-name" type="text" autocomplete="given-name" />
+      <div class="down-contact-container">
+        <div class="form-container">
+          <form id="contact-form" action="./contact.html" method="get">
+            <div class="single-form-block">
+              <label for="first-name">Imie:</label>
+              <input name="first-name" id="first-name" type="text" autocomplete="given-name" />
+            </div>
+            <div class="single-form-block">
+              <label for="surname">Nazwisko:</label>
+              <input name="surname" id="surname" type="text" autocomplete="family-name" />
+            </div>
+            <div class="single-form-block">
+              <label for="email">E-mail:</label>
+              <input name="email" id="email" type="email" autocomplete="email" />
+            </div>
+            <div class="single-form-block">
+              <label for="description">Opisz swój wyjazd:</label>
+              <textarea name="description" id="description" cols="40" rows="10"></textarea>
+            </div>
+            <div class="single-form-block">
+              <label for="photos">Wybierz zdjęcia do przesłania:</label>
+              <input type="file" id="photos" name="photos" multiple accept=".png, .jpg, .jpeg, .gif, .heic, .heif" />
+            </div>
+            <div class="single-form-block form-button-block">
+              <button type="submit" id="submit" name="submit">Prześlij</button>
+              <button type="reset" id="reset" name="reset">Resetuj</button>
+            </div>
+          </form>
+        </div>
+        <div class="quote-container">
+          <div class="quote-box">
+            <span class="quote">„Wyrusz ze swej ziemi, z miejsca twego urodzenia, do kraju, który ci ukażę.”</span>
+            <span class="quote-source">— Księga Rodzaju 12,1</span>
           </div>
-          <div class="single-form-block">
-            <label for="surname">Nazwisko:</label>
-            <input name="surname" id="surname" type="text" autocomplete="family-name" />
+          <div class="quote-box">
+            <span class="quote">„Podróżowanie jest częścią wiedzy.”</span>
+            <span class="quote-source">— Przekaz proroka Mahometa</span>
           </div>
-          <div class="single-form-block">
-            <label for="email">E-mail:</label>
-            <input name="email" id="email" type="email" autocomplete="email" />
+          <div class="quote-box">
+            <span class="quote">„Ja jestem drogą, prawdą i życiem.”</span>
+            <span class="quote-source">— Ewangelia Jana 14,6</span>
           </div>
-          <div class="single-form-block">
-            <label for="description">Opisz swój wyjazd:</label>
-            <textarea name="description" id="description" cols="50" rows="10"></textarea>
-          </div>
-          <div class="single-form-block">
-            <label for="photos">Wybierz zdjęcia do przesłania:</label>
-            <input type="file" id="photos" name="photos" multiple accept=".png, .jpg, .jpeg, .gif, .heic, .heif" />
-          </div>
-          <div class="single-form-block form-button-block">
-            <button type="submit" id="submit" name="submit">Prześlij</button>
-            <button type="reset" id="reset" name="reset">Resetuj</button>
-          </div>
-        </form>
+        </div>
       </div>
     </main>
   </body>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
 /* All pages */
 
 :root {
@@ -16,6 +18,7 @@
   --color-light-gold: #fff9e5;
   --color-muted-purple: #5a4c6e;
   --color-muted-purple-opacity: rgba(90, 76, 110, 0.6);
+  --color-error: #ffe6e6;
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
@@ -72,7 +75,7 @@ header nav#navigation-between-pages ul li.header-nav:hover {
 
 header nav#navigation-between-pages ul li a {
   color: var(--color-dark-gray);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 
 .picked-nav {
@@ -137,24 +140,32 @@ header nav#navigation-between-pages ul li a {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   text-align: center;
   margin: 0 0 2rem 0;
   padding-top: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: "Cinzel";
 }
 
 h2 {
-  margin: 1.25rem 0;
+  margin: 1.25rem 0 0 0;
+  font-size: 1.5rem;
 }
 
 h3,
 h4 {
-  margin: 1.15rem 0;
+  margin: 1.15rem 0 0 0;
+  font-size: 1.2rem;
 }
 
 p {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
 img {
@@ -172,11 +183,20 @@ img {
 .container ol {
   padding-left: 2.5rem;
   margin: 1rem 0;
+  font-size: 1.1rem;
 }
 
 .single-article {
   margin-top: -4rem;
   padding-top: 4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  p,
+  .container ul,
+  .container ol {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -186,6 +206,7 @@ img {
   }
   h1 {
     margin: 0.5rem 0;
+    font-size: 2rem;
   }
 }
 
@@ -208,7 +229,6 @@ footer p a {
 }
 
 .footer-description {
-  font-style: italic;
   color: var(--color-soft-beige);
 }
 
@@ -242,13 +262,46 @@ footer p a {
 
 /* Main page */
 
+#banner {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  #banner {
+    height: 40vh;
+  }
+}
+
 .main-container {
   background-color: var(--color-light-gray-opacity);
   border: 3px solid var(--color-soft-beige);
 }
 
+.question-and-answer {
+  max-width: 1000px;
+  margin: auto;
+  border-bottom: 3px solid var(--color-dark-gray-opacity);
+}
+
+.main-container .religion .question-and-answer:last-child {
+  border-bottom: none;
+}
+
 .question-and-answer p {
   text-align: justify;
+  hyphens: auto;
+  padding-left: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .quote-box {
@@ -283,11 +336,11 @@ footer p a {
 }
 
 @media only screen and (max-width: 768px) {
+  .quote-box {
+    margin: 1rem 0rem;
+  }
   .question-and-answer p {
     text-align: left;
-  }
-  .quote-box {
-    margin: 1rem 0rem 1rem 1rem;
   }
 }
 
@@ -302,6 +355,8 @@ footer p a {
 
 .article-container .article-text {
   text-align: justify;
+  hyphens: auto;
+  padding-bottom: 0.5rem;
 }
 
 .container .religion .single-article:last-child .article-text {
@@ -355,6 +410,7 @@ span.designe-bold {
 #site-navigation {
   background-color: var(--color-light-gold);
   border-radius: 2rem;
+  padding: 0 0.5rem;
 }
 
 #site-navigation ul {
@@ -372,7 +428,6 @@ span.designe-bold {
 
 #site-navigation ul li {
   padding: 0.15rem;
-  margin: 0.05rem;
   text-align: center;
   transition: background-color 0.3s ease;
   border-radius: 1rem;
@@ -382,16 +437,10 @@ span.designe-bold {
   background-color: var(--color-soft-beige);
 }
 
-#site-navigation ul li::before {
-  content: attr(data-index);
-  color: black;
-  font-size: 1.15rem;
-}
-
 #site-navigation ul li a {
   color: black;
-  padding: 0.2rem 0 0.2rem 0.2rem;
-  font-size: 1.15rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -589,6 +638,37 @@ div.site-navigation-other nav#site-navigation ul li a:hover {
   border: 3px solid var(--color-soft-beige);
 }
 
+.down-contact-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.quote-container {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-container .quote-box {
+  margin: 1rem 0 1rem 6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .quote-container .quote-box {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .down-contact-container {
+    flex-direction: column;
+  }
+  .quote-container {
+    padding-left: 0;
+  }
+}
+
 .form-container {
   width: max-content;
   margin: 2rem 0;
@@ -596,10 +676,14 @@ div.site-navigation-other nav#site-navigation ul li a:hover {
 
 form {
   padding-left: 0.5rem;
+  font-size: 1.1rem;
+  min-width: max-content;
 }
 
-form button {
+form button,
+input[type="file"]::file-selector-button {
   padding: 0.1rem 0.4rem;
+  cursor: pointer;
 }
 
 label {
@@ -639,12 +723,27 @@ div.single-form-block.form-button-block {
   border: none;
 }
 
-@media only screen and (max-width: 768px) {
+input.error,
+textarea.error {
+  border: 1px solid red;
+  background-color: var(--color-error);
+}
+
+@media only screen and (max-width: 1200px) {
+  form {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
   label,
   input,
   textarea {
     display: block;
     margin-bottom: 0.2rem;
+  }
+  form {
+    padding-left: 0;
   }
 }
 
