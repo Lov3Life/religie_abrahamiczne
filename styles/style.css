@@ -182,7 +182,7 @@ img {
 .container ul,
 .container ol {
   padding-left: 2.5rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-size: 1.1rem;
 }
 
@@ -207,6 +207,11 @@ img {
   h1 {
     margin: 0.5rem 0;
     font-size: 2rem;
+  }
+  p,
+  .container ul,
+  .container ol {
+    margin: 0.25rem 0;
   }
 }
 
@@ -330,13 +335,13 @@ footer p a {
 }
 
 @media only screen and (max-width: 992px) {
-  .quote-box {
+  .main-container .quote-box {
     margin: 1rem 0rem 3rem 5rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .quote-box {
+  .main-container .quote-box {
     margin: 1rem 0rem;
   }
   .question-and-answer p {
@@ -389,6 +394,7 @@ span.designe-bold {
 @media only screen and (max-width: 768px) {
   .article-container .article-text {
     text-align: left;
+    padding: 0 1rem 0.5rem 1rem;
   }
 }
 
@@ -665,8 +671,11 @@ div.site-navigation-other nav#site-navigation ul li a:hover {
   .down-contact-container {
     flex-direction: column;
   }
-  .quote-container {
+  .down-contact-container .quote-container {
+    padding-left: 0;
     margin: 0;
+  }
+  .quote-container .quote-box {
     padding-left: 0;
   }
 }
