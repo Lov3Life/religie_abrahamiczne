@@ -157,14 +157,18 @@ h2 {
   font-size: 1.5rem;
 }
 
-h3,
-h4 {
+h3 {
   margin: 1.15rem 0 0 0;
   font-size: 1.2rem;
 }
 
+h4 {
+  margin: 1rem 0 0 0;
+  font-size: 1.15rem;
+}
+
 p {
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   font-size: 1.1rem;
 }
 
@@ -181,9 +185,24 @@ img {
 
 .container ul,
 .container ol {
-  padding-left: 2.5rem;
-  margin: 0.5rem 0;
+  padding-left: 2rem;
+  margin: 0.3rem 0;
   font-size: 1.1rem;
+}
+
+.container ul li,
+.container ol li {
+  margin: 0.2rem 0;
+}
+
+.container ul li:first-child,
+.container ol li:first-child {
+  margin-top: 0;
+}
+
+.container ul li:last-child,
+.container ol li:last-child {
+  margin-bottom: 0;
 }
 
 .single-article {
@@ -196,6 +215,7 @@ img {
   .container ul,
   .container ol {
     font-size: 1rem;
+    margin: 0.4rem 0;
   }
 }
 
@@ -338,6 +358,9 @@ footer p a {
   .main-container .quote-box {
     margin: 1rem 0rem 3rem 5rem;
   }
+  .quote-box {
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -394,7 +417,7 @@ span.designe-bold {
 @media only screen and (max-width: 768px) {
   .article-container .article-text {
     text-align: left;
-    padding: 0 1rem 0.5rem 1rem;
+    padding: 0 1rem 0.5rem 0.8rem;
   }
 }
 
@@ -403,7 +426,7 @@ span.designe-bold {
     display: none;
   }
   .article-left {
-    padding: 0 0 0 0.5rem;
+    padding: 0;
   }
 }
 
@@ -674,9 +697,6 @@ div.site-navigation-other nav#site-navigation ul li a:hover {
   .down-contact-container .quote-container {
     padding-left: 0;
     margin: 0;
-  }
-  .quote-container .quote-box {
-    padding-left: 0;
   }
 }
 
