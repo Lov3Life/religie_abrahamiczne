@@ -297,46 +297,19 @@ footer p a {
   width: 100%;
   height: 70vh;
   overflow: hidden;
-  position: relative;
+  background-image: url(../images/main_banner.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 #banner h1 {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  width: max-content;
-}
-
-.banner-img {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-#banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
 }
 
 @media only screen and (max-width: 768px) {
   #banner {
     height: 40vh;
-  }
-  #banner h1 {
-    width: min-content;
-    top: 20%;
   }
 }
 
