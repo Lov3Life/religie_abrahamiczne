@@ -49,6 +49,7 @@ header {
   top: 0;
   background-color: var(--color-soft-beige);
   border-bottom: 1px solid var(--color-dark-gray);
+  z-index: 3;
 }
 
 header nav#navigation-between-pages ul {
@@ -176,6 +177,11 @@ img {
   display: block;
 }
 
+.religion {
+  max-width: 1300px;
+  margin: auto;
+}
+
 .container {
   margin: 2rem;
   padding: 0 2rem 1rem 2rem;
@@ -291,6 +297,29 @@ footer p a {
   width: 100%;
   height: 70vh;
   overflow: hidden;
+  position: relative;
+}
+
+#banner h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+}
+
+.banner-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 #banner img {
@@ -305,6 +334,10 @@ footer p a {
   #banner {
     height: 40vh;
   }
+  #banner h1 {
+    width: min-content;
+    top: 20%;
+  }
 }
 
 .main-container {
@@ -313,9 +346,12 @@ footer p a {
 }
 
 .question-and-answer {
+  border-bottom: 3px solid var(--color-dark-gray-opacity);
+}
+
+.main-container .religion {
   max-width: 1000px;
   margin: auto;
-  border-bottom: 3px solid var(--color-dark-gray-opacity);
 }
 
 .main-container .religion .question-and-answer:last-child {
