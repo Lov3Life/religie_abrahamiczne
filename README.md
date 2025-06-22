@@ -4,7 +4,7 @@ This project is an educational website that presents comprehensive information a
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project-root/
@@ -35,7 +35,7 @@ project-root/
 
 ---
 
-## 🎨 Technologies Used
+## Technologies Used
 
 - **HTML5**
 - **CSS3** (custom properties, responsive layout)
@@ -46,7 +46,7 @@ project-root/
 
 ---
 
-## 📌 Features
+## Features
 
 - Fully responsive layout
 - FAQ-style main page
@@ -58,7 +58,7 @@ project-root/
 
 ---
 
-## 🔧 How to Use
+## How to Use
 
 1. Clone or download the repository
 2. Open `index.html` in a browser
@@ -67,19 +67,19 @@ project-root/
 
 ---
 
-## 📷 Image Attribution
+## Image Attribution
 
 Some icons and graphics were created using [Flaticon](https://www.flaticon.com/) and generated with AI tools. Where applicable, attribution is noted in the footer.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is for **educational and informational purposes only**. The content is written to be neutral and respectful of all faiths.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
